@@ -1,0 +1,7 @@
+/.mypy*
+/env
+.env
+__pycache__
+.pypirc
+*.ipynb
+.main
