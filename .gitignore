@@ -5,3 +5,5 @@ __pycache__
 .pypirc
 *.ipynb
 .main
+downloads
+*test*

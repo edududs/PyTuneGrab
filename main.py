@@ -1,11 +1,7 @@
-from pytunegrab.core import AudioDownload, VideoDownload, convert_to_mp3
+from pytunegrab.core import IDownloader
+downloader = IDownloader()
 
-audio = AudioDownload()
-video = VideoDownload()
+url_da_playlist = "https://music.youtube.com/watch?v=osZU21M9zyM&list=PLLaFpNaeENKMld-bNnsVXNwr-ofOBhEu7"
+music_url = "https://music.youtube.com/watch?v=AZ_Hb9B0F58"
 
-
-# audio.download("https://www.youtube.com/watch?v=5yijULf4Hko")
-
-audio.download_playlist(
-    "https://music.youtube.com/watch?v=2fngvQS_PmQ&list=PLLaFpNaeENKPgx955VKNDLpopNvXwLtnA"
-)
+downloader.download_audio
