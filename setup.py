@@ -4,20 +4,55 @@ from pathlib import Path
 
 from setuptools import find_packages, setup
 
-version = "0.1.0"
+version = "0.1.1"
 name = "pytunegrab"
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-    
-with open("requirements.txt", "r", encoding="utf-8") as req_files:
-    install_requires = req_files.read().splitlines()
 
 setup(
     name=name,
     version=version,
     packages=find_packages(),
-    install_requires=install_requires,
+    install_requires=[
+        "aiofiles",
+        "certifi",
+        "charset-normalizer",
+        "colorama",
+        "decorator",
+        "docutils",
+        "idna",
+        "imageio",
+        "imageio-ffmpeg",
+        "importlib-metadata",
+        "jaraco.classes",
+        "keyring",
+        "markdown-it-py",
+        "mdurl",
+        "more-itertools",
+        "moviepy",
+        "nh3",
+        "numpy",
+        "pillow",
+        "pkginfo",
+        "proglog",
+        "Pygments",
+        "python-slugify",
+        "pytube",
+        "pywin32-ctypes",
+        "readme-renderer",
+        "requests",
+        "requests-toolbelt",
+        "rfc3986",
+        "rich",
+        "setuptools",
+        "slugify",
+        "text-unidecode",
+        "tqdm",
+        "twine",
+        "urllib3",
+        "zipp",
+    ],
     long_description=long_description,
     long_description_content_type="text/markdown",
 )
